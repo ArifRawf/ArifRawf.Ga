@@ -61,24 +61,25 @@
 <body>
     
     <style>
-    #mainheader{
-    
-     min-height: 59vh;
-    color:#1b1b1b; /*-light black-*/
-    font-size: 1.1em;
-    background-color:#f2f0ea;/* --off- yellow-white-- */
-    padding:1%;
-    border-radius:5px;
+    iframe{
+    width: 100%;
+     
     }
     
     </style>
-   
+   <script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+    
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+	</script>
   
-  <div id="mainheader">
-            <iframe style="overflow:hidden; position: absolute; display:block;  min-height: 100vh; border: none;" 
-                    src="https://arifrawf.ga/header.html" 
-                    width="100%" scrolling="no" ></iframe>
-        </div>
+  
+            <iframe src="https://arifrawf.ga/header.html" scrolling="no" ></iframe>
+        
     
     
        <!--End Of Body Header-->
