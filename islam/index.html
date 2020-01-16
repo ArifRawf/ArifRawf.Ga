@@ -49,11 +49,6 @@
 
 </head> 
 <script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
-<script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
-<script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
-<script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
-<script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
-<script type="text/javascript" src="https://wap4dollar.com/ad/pops/?id=yf7bgohf7v"></script>
 
 
 <!-- ===========================Header End ======================================= -->
@@ -69,23 +64,36 @@
 
 <body>
     
-    <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" width="150" height="150" src="http://ArifRawf.github.Io/assets/images/profile_cartoon.png" alt="ArifRawf - Portrait" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Arif Rawf</h1>
-                <h2 class="desc">Best Tips And Tricks Provider</h2>
-                <ul class="social list-inline">
-                    
-                    <li><a href="https://fb.me/arifrawf.nasmin" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-                    
-                    <li><a href="https://fb.me/arifrawf.nasmin" target="_blank"><i class="fa fa-camera-retro"></i></a></li>
-                    <li class="last-item"><a href="https://fb.me/arifrawf.nasmin" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="/"><i class="fa fa-paper-plane"></i>HOME</a>
-        </div><!--//container-->
-    </header><!--//header-->
+    <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<div w3-include-html="/header.html"></div>
     
     
     
