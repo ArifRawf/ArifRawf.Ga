@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "https://medium.com/feed/@hossainkhan",
+        "https://wap4dollar.com/ad/nonadult/serve.php?id=yf7bgohf7v",
         
         {
         // how many entries do you want?
@@ -60,5 +60,5 @@ jQuery(document).ready(function($) {
     );
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "amardeshbd");
+    GitHubCalendar("#github-graph", "ArifRawf");
 });
