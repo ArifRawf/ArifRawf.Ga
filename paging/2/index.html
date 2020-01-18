@@ -56,11 +56,11 @@
 
 
 
-                 <!--body Header-->
+                                  <!--Header--->
 
 <body>
-    
-    <script>
+
+<script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -92,6 +92,10 @@ function includeHTML() {
 <div w3-include-html="/header.html"></div>
 
 
+    
+       <!--/Header-->
+
+    
     
     
        <!--End Of Body Header-->
@@ -137,6 +141,7 @@ function includeHTML() {
 thumbnail:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
 </style>
                
                 
@@ -149,11 +154,10 @@ thumbnail:hover {
                         <div class="content">
 
                             <div class="item featured text-center"><!-- featured item-->
-                                
-                                <p class="summary">Latest Updates 2020</p>
+                                  <p class="summary">Latest Updates 2020</p>
                                 <table class="desc text-left"><tr><td align="left"><img class="thumbnail" src="https://janatarbangla.com/wp-content/uploads/2018/10/rstygs-1.jpg" alt="Forest"/></td>
-                                   <td style="display:inline-block;"><h1> <a href="/islam/অযু-করার-সঠিক-নিয়ম.html">অযু করার সঠিক নিয়ম
-                                             </a></h1></td></tr>
+                                   <td style="display:inline-block;"><font size="4"> <a href="/islam/অযু-করার-সঠিক-নিয়ম.html">অযু করার সঠিক নিয়ম
+                                             </a></font></td></tr>
                                     
                                     </table>
                                     
@@ -299,28 +303,10 @@ thumbnail:hover {
 
                 <section class="projects section">
                     <div class="section-inner">
-                        <h2 class="heading"><i class="fa fa-github"></i>pen Categories</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Islam - ইসলাম</h3>
-                                <p class="summary">Islam is a true religion.All islamic post will be indexed here which provided by Arif Rawf.</p>
-                                <p><a class="more-link" href="/islam"><i class="fa fa-external-link"></i>Go To Category</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Education - শিক্ষা</h3>
-                                <p class="summary">Education is a proper choice in life.To gain knowledge more and more arif rawf is ready to provide educational posts.</p>
-                                <p><a class="more-link" href="/education"><i class="fa fa-external-link"></i>Go To Category</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Technology - তথ্য ও যোগাযোগ প্রযুক্তি</h3>
-                                <p class="summary">Technology ("science of craft", from Greek τέχνη, techne, "art, skill, cunning of hand"; and -λογία, -logia) is the sum of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation.</p>
-                                <p><a class="more-link" href="/technology"><i class="fa fa-external-link"></i>Go To Category</a></p>
-                            </div><!--//item-->
 
-                            
-                            <a class="btn btn-cta-secondary" href="https://facebook.com/arifrawf.nasmin">Contact Arif On Facebook <i class="fa fa-chevron-right"></i></a>
+<div w3-include-html="/cats.html"></div>
 
-                        </div><!--//content-->
+                        
                     </div><!--//section-inner-->
                 </section><!--//section-->
                 
@@ -328,31 +314,7 @@ thumbnail:hover {
                 <section class="languages aside section">
                     <div class="section-inner">
                         
-<h2 class="heading">Site Language Supports</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <i class="fa fa-language"></i> <span class="title"><strong>Bengali:</strong></span>
-                                    <span class="level"><br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <i class="fa fa-language"></i> <span class="title"><strong>English:</strong></span>
-                                    <span class="level"> <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div>
-
-<h2 class="heading">Arif Rawf's Hobby</h2>
-                        <div class="content">
-                            <p>When I am not working, I enjoy various activities both indoor and outdoor.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-globe"></i> Traveling around the world</li>
-                                <li><i class="fa fa-car"></i> Visiting to sisters house.</li>
-                                <li><i class="fa fa-gamepad"></i> Playing with my nieces.</li>
-                                <li><i class="fa fa-cutlery"></i> Try out food from different locations.</li>
-                                <li><i class="fa fa-camera-retro"></i> Take lots of pictures and videos.</li>
-                            </ul>
-                        </div>
+<div w3-include-html="/sidebar.html"></div>
 
 
                         
@@ -361,13 +323,28 @@ thumbnail:hover {
             
             
                
-              
-            
     
     <div w3-include-html="/footer.html"></div>
- <script>
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="/assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>            
+<script>
 includeHTML();
 </script>
+
+</body>
+</html> 
+
+
  
     <!-- Javascript -->          
     <script type="text/javascript" src="/assets/plugins/jquery-1.11.3.min.js"></script>
@@ -382,4 +359,3 @@ includeHTML();
     <script type="text/javascript" src="/assets/js/main.js"></script>            
 </body>
 </html> 
-
